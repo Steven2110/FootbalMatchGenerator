@@ -11,7 +11,7 @@ import SwiftUI
 struct FootbalMatchGeneratorApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            FMGMainView()
         }
     }
 }

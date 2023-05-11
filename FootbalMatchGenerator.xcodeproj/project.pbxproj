@@ -8,21 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		B003F5DF2A0C20E6001089A7 /* FootbalMatchGeneratorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B003F5DE2A0C20E6001089A7 /* FootbalMatchGeneratorApp.swift */; };
-		B003F5E12A0C20E6001089A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B003F5E02A0C20E6001089A7 /* ContentView.swift */; };
+		B003F5E12A0C20E6001089A7 /* FMGMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B003F5E02A0C20E6001089A7 /* FMGMainView.swift */; };
 		B003F5E32A0C20E7001089A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B003F5E22A0C20E7001089A7 /* Assets.xcassets */; };
 		B003F5E62A0C20E7001089A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B003F5E52A0C20E7001089A7 /* Preview Assets.xcassets */; };
 		B003F5ED2A0C212E001089A7 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B003F5EC2A0C212E001089A7 /* .gitignore */; };
 		B003F5EF2A0C2139001089A7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B003F5EE2A0C2139001089A7 /* README.md */; };
+		B003F5F12A0CC295001089A7 /* FMGTeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B003F5F02A0CC295001089A7 /* FMGTeamView.swift */; };
+		B003F5F32A0CC7B9001089A7 /* FCTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = B003F5F22A0CC7B9001089A7 /* FCTeam.swift */; };
+		B003F5F52A0CD4AE001089A7 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = B003F5F42A0CD4AE001089A7 /* Match.swift */; };
+		B003F5F72A0CD934001089A7 /* FMGMatchesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B003F5F62A0CD934001089A7 /* FMGMatchesListView.swift */; };
+		B003F5F92A0CDEEF001089A7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B003F5F82A0CDEEF001089A7 /* Constants.swift */; };
+		B003F5FB2A0CDF34001089A7 /* FMGSeasonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B003F5FA2A0CDF34001089A7 /* FMGSeasonViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B003F5DB2A0C20E6001089A7 /* FootbalMatchGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FootbalMatchGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B003F5DE2A0C20E6001089A7 /* FootbalMatchGeneratorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootbalMatchGeneratorApp.swift; sourceTree = "<group>"; };
-		B003F5E02A0C20E6001089A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B003F5E02A0C20E6001089A7 /* FMGMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMGMainView.swift; sourceTree = "<group>"; };
 		B003F5E22A0C20E7001089A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B003F5E52A0C20E7001089A7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B003F5EC2A0C212E001089A7 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		B003F5EE2A0C2139001089A7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B003F5F02A0CC295001089A7 /* FMGTeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMGTeamView.swift; sourceTree = "<group>"; };
+		B003F5F22A0CC7B9001089A7 /* FCTeam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCTeam.swift; sourceTree = "<group>"; };
+		B003F5F42A0CD4AE001089A7 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		B003F5F62A0CD934001089A7 /* FMGMatchesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMGMatchesListView.swift; sourceTree = "<group>"; };
+		B003F5F82A0CDEEF001089A7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B003F5FA2A0CDF34001089A7 /* FMGSeasonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMGSeasonViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +70,13 @@
 			isa = PBXGroup;
 			children = (
 				B003F5DE2A0C20E6001089A7 /* FootbalMatchGeneratorApp.swift */,
-				B003F5E02A0C20E6001089A7 /* ContentView.swift */,
+				B003F5E02A0C20E6001089A7 /* FMGMainView.swift */,
+				B003F5FA2A0CDF34001089A7 /* FMGSeasonViewModel.swift */,
+				B003F5F82A0CDEEF001089A7 /* Constants.swift */,
+				B003F5F62A0CD934001089A7 /* FMGMatchesListView.swift */,
+				B003F5F22A0CC7B9001089A7 /* FCTeam.swift */,
+				B003F5F42A0CD4AE001089A7 /* Match.swift */,
+				B003F5F02A0CC295001089A7 /* FMGTeamView.swift */,
 				B003F5E22A0C20E7001089A7 /* Assets.xcassets */,
 				B003F5E42A0C20E7001089A7 /* Preview Content */,
 			);
@@ -145,8 +163,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B003F5E12A0C20E6001089A7 /* ContentView.swift in Sources */,
+				B003F5F12A0CC295001089A7 /* FMGTeamView.swift in Sources */,
+				B003F5E12A0C20E6001089A7 /* FMGMainView.swift in Sources */,
+				B003F5FB2A0CDF34001089A7 /* FMGSeasonViewModel.swift in Sources */,
 				B003F5DF2A0C20E6001089A7 /* FootbalMatchGeneratorApp.swift in Sources */,
+				B003F5F52A0CD4AE001089A7 /* Match.swift in Sources */,
+				B003F5F92A0CDEEF001089A7 /* Constants.swift in Sources */,
+				B003F5F72A0CD934001089A7 /* FMGMatchesListView.swift in Sources */,
+				B003F5F32A0CC7B9001089A7 /* FCTeam.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
