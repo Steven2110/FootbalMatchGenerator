@@ -13,7 +13,7 @@ struct FMGMainView: View {
     
     var body: some View {
         NavigationView {
-            ZStack {
+            VStack {
                 List {
                     ForEach(vm.teams) { team in
                         NavigationLink {
@@ -36,16 +36,11 @@ struct FMGMainView: View {
                         }
                     }
                 }
-                VStack {
-                    Spacer()
-                    Button {
-                        vm.startSeason()
-                    } label: {
-                        startSeasonButton
-                    }
-                    .frame(maxWidth: .infinity, maxHeight: 100)
-                    .background(Color.white.opacity(0.94))
-                }
+                Button {
+                    vm.startSeason()
+                } label: {
+                    startSeasonButton
+                }.padding()
                 
             }
             .navigationTitle("Scoreboard")
